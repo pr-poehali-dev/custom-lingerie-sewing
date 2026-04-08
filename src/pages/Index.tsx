@@ -83,38 +83,38 @@ export default function Index() {
 
   const collections = [
     {
-      name: "Классика",
-      desc: "Невесомые комплекты из тончайшего хлопка и кружева для ежедневного изящества",
+      name: "Бюстгальтер",
+      desc: "Шьём на ваши точные мерки: с косточками или без, мягкий или формованный — всё по вашему желанию",
       icon: "Heart",
       color: "bg-petal",
     },
     {
-      name: "Романтика",
-      desc: "Кружевные боди и комплекты для особых вечеров — для тех, кто ценит настоящую нежность",
+      name: "Комплекты",
+      desc: "Бюстгальтер + трусики, пошитые в едином стиле и ткани — идеальная пара именно под ваши параметры",
       icon: "Sparkles",
       color: "bg-blush/50",
     },
     {
-      name: "Boudoir",
-      desc: "Шёлковые пеньюары, пояса и корсеты — для будуара вашей мечты",
+      name: "Боди",
+      desc: "Кружевные и шёлковые боди, которые сидят как вторая кожа — потому что сделаны именно для вас",
       icon: "Star",
       color: "bg-cream",
     },
     {
-      name: "Bridal",
-      desc: "Свадебные комплекты: нежные, воздушные, созданные для самого важного дня",
+      name: "Свадебное",
+      desc: "Бельё под свадебное платье и для первой ночи: нежно, воздушно, по вашим меркам",
       icon: "Crown",
       color: "bg-petal",
     },
     {
-      name: "Комфорт",
-      desc: "Мягкие бесшовные модели без косточек — красота и удобство каждый день",
+      name: "Корсеты и пеньюары",
+      desc: "Классические корсеты на шнуровке и шёлковые пеньюары для будуара — с посадкой под вашу фигуру",
       icon: "Leaf",
       color: "bg-blush/40",
     },
     {
-      name: "Plus Size",
-      desc: "Все модели создаются строго по вашим меркам — нет ни одного стандартного размера",
+      name: "Любой размер",
+      desc: "Работаем с любым размером и особенностями фигуры — никаких стандартов, только ваши мерки",
       icon: "Rainbow",
       color: "bg-cream",
     },
@@ -132,17 +132,17 @@ export default function Index() {
   const testimonials = [
     {
       name: "Анастасия К.",
-      text: "Заказала свадебный комплект — это было лучшее решение в моей жизни. Всё идеально сидело, муж был в восторге!",
+      text: "Всю жизнь не могла найти бюстгальтер по размеру — нестандартная грудь. После пошива по меркам это стало просто праздником каждый день!",
       city: "Москва",
     },
     {
       name: "Ирина М.",
-      text: "Наконец-то нашла мастера, который понимает, что такое «идеальная посадка». Уже третий заказ, и каждый раз шедевр.",
+      text: "Заказала свадебный комплект. Сидит идеально под платье, не видно ни единой складки. Три месяца — и уже делаю второй заказ.",
       city: "Санкт-Петербург",
     },
     {
       name: "Татьяна В.",
-      text: "Мягкая ткань, нежнейшее кружево, чувствую себя принцессой. Спасибо за внимание к каждой детали!",
+      text: "Наконец-то бельё, которое не давит, не скачет и не натирает. Шьют быстро, замеры снимают онлайн — очень удобно!",
       city: "Казань",
     },
   ];
@@ -200,14 +200,14 @@ export default function Index() {
 
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <p className="animate-fade-up opacity-0 delay-100 font-montserrat text-xs tracking-[0.3em] uppercase text-dusty-rose mb-6">
-            Ателье нижнего белья ✦ ручная работа
+            Пошив нижнего белья ✦ по индивидуальным меркам
           </p>
           <h1 className="animate-fade-up opacity-0 delay-200 font-cormorant text-6xl md:text-8xl font-light text-foreground leading-tight mb-6">
-            Создано<br />
-            <em className="text-deep-rose font-light">для Вас</em>
+            Бельё, которое<br />
+            <em className="text-deep-rose font-light">сидит идеально</em>
           </h1>
           <p className="animate-fade-up opacity-0 delay-300 font-montserrat text-sm text-muted-foreground leading-relaxed mb-10 max-w-md mx-auto">
-            Каждое изделие — это история вашей красоты, рассказанная нежным кружевом и тончайшими тканями по вашим уникальным меркам
+            Шьём нижнее бельё строго по вашим меркам — никаких компромиссов с размерной сеткой. Ваша фигура, ваш стиль, ваш комфорт
           </p>
           <div className="animate-fade-up opacity-0 delay-400 flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -224,7 +224,7 @@ export default function Index() {
             </button>
           </div>
           <div className="animate-fade-up opacity-0 delay-500 mt-14 flex items-center justify-center gap-8 text-center">
-            {[["500+", "довольных клиенток"], ["7 лет", "опыта"], ["100%", "ручная работа"]].map(([v, l]) => (
+            {[["500+", "изделий пошито"], ["7 лет", "опыта"], ["100%", "по вашим меркам"]].map(([v, l]) => (
               <div key={l}>
                 <div className="font-cormorant text-3xl text-deep-rose font-light">{v}</div>
                 <div className="font-montserrat text-[10px] text-muted-foreground uppercase tracking-widest">{l}</div>
@@ -242,9 +242,9 @@ export default function Index() {
         <Section>
           <FloralDivider />
           <div className="text-center mb-16">
-            <p className="font-montserrat text-xs tracking-[0.25em] uppercase text-dusty-rose mb-3">Коллекции</p>
+            <p className="font-montserrat text-xs tracking-[0.25em] uppercase text-dusty-rose mb-3">Что шьём</p>
             <h2 className="font-cormorant text-5xl md:text-6xl font-light text-foreground">
-              Что мы создаём
+              Виды изделий
             </h2>
           </div>
         </Section>
@@ -266,10 +266,10 @@ export default function Index() {
             <img src={IMG_HERO} alt="Коллекция" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent flex items-center">
               <div className="px-12">
-                <p className="font-montserrat text-xs tracking-widest uppercase text-dusty-rose mb-3">Особый подход</p>
-                <h3 className="font-cormorant text-4xl font-light text-foreground mb-4">Только натуральные<br />материалы</h3>
+                <p className="font-montserrat text-xs tracking-widest uppercase text-dusty-rose mb-3">Только натуральное</p>
+                <h3 className="font-cormorant text-4xl font-light text-foreground mb-4">Итальянские ткани<br />и кружево</h3>
                 <p className="font-montserrat text-xs text-muted-foreground max-w-xs leading-relaxed">
-                  Мы используем шёлк, тонкий хлопок, кружево ручной работы и итальянские ткани
+                  Шёлк, хлопок, микрофибра и кружево ручного производства — только проверенные материалы
                 </p>
               </div>
             </div>
@@ -437,13 +437,13 @@ export default function Index() {
           <Section>
             <p className="font-montserrat text-xs tracking-[0.25em] uppercase text-dusty-rose mb-4">О нас</p>
             <h2 className="font-cormorant text-5xl font-light text-foreground mb-6">
-              Маленькое ателье<br /><em>с большой душой</em>
+              Шьём по меркам,<br /><em>а не по стандартам</em>
             </h2>
             <p className="font-montserrat text-sm text-muted-foreground leading-relaxed mb-4">
-              Наше ателье основано в 2017 году с простой идеей: каждая женщина заслуживает нижнего белья, которое создано именно для неё.
+              Магазинное бельё не учитывает вашу фигуру — оно сделано для «среднестатистической» женщины. Мы шьём только по вашим индивидуальным меркам: грудь, талия, бёдра, высота чашки — всё точно.
             </p>
             <p className="font-montserrat text-sm text-muted-foreground leading-relaxed mb-8">
-              Мы не работаем с готовыми лекалами — каждое изделие разрабатывается с нуля по вашим меркам. Мы используем только сертифицированные ткани и фурнитуру премиального качества.
+              Каждое лекало строится с нуля под вашу фигуру. Никаких компромиссов, никаких «подойдёт и так» — только идеальная посадка с первой примерки.
             </p>
             <div className="flex gap-6">
               {[["🤍", "Забота о деталях"], ["✂️", "Ручная работа"], ["📏", "Идеальная посадка"]].map(([e, l]) => (
